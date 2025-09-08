@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { 
   Cpu, 
   Brain,
@@ -127,6 +128,7 @@ const StackCard = ({
   description, 
   kpi, 
   category,
+  href
 }: {
   title: string;
   description: string;
@@ -181,20 +183,29 @@ const StackCard = ({
                 ))}
               </div>
               <div className="space-y-2">
-                <button className="w-full bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-lg font-mono text-sm transition-colors">
+                <Link 
+                  href={href}
+                  className="block w-full bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-lg font-mono text-sm transition-colors text-center"
+                >
                   Try with Sample Data
-                </button>
-                <button className="w-full border border-green-600 text-green-400 hover:bg-green-600 hover:text-white px-4 py-2 rounded-lg font-mono text-sm transition-colors">
+                </Link>
+                <Link 
+                  href={href}
+                  className="block w-full border border-green-600 text-green-400 hover:bg-green-600 hover:text-white px-4 py-2 rounded-lg font-mono text-sm transition-colors text-center"
+                >
                   View Full Demo →
-                </button>
+                </Link>
               </div>
             </div>
           </div>
         )}
 
-        <button className="text-green-400 text-sm hover:underline flex items-center font-mono">
+        <Link 
+          href={href}
+          className="text-green-400 text-sm hover:underline flex items-center font-mono"
+        >
           View Demo <ArrowRight className="w-4 h-4 ml-1" />
-        </button>
+        </Link>
       </div>
     </div>
   );
@@ -253,7 +264,7 @@ export default function Home() {
       kpi: "Reduce stockouts by 25% in 2 months",
       category: "AI-Driven",
       previewData: {},
-      href: "/stacks/demand-forecast"
+      href: "/demand-forecast"
     },
     {
       title: "Operations Optimization Stack",
@@ -261,7 +272,7 @@ export default function Home() {
       kpi: "Increase efficiency by 30% in 6 weeks",
       category: "Predictive",
       previewData: {},
-      href: "/stacks/operations"
+      href: "/operations-optimization"
     },
     {
       title: "Policy & Governance Stack",
@@ -269,7 +280,7 @@ export default function Home() {
       kpi: "Optimize budget allocation by 20%",
       category: "Governance",
       previewData: {},
-      href: "/stacks/governance"
+      href: "/policy-governance"
     }
   ];
 

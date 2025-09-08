@@ -118,7 +118,7 @@ export function SiteHeader({ user, className }: SiteHeaderProps) {
                   className="hidden md:flex bg-green-500 hover:bg-green-600 text-black"
                 >
                   <Link href="/signup">
-                    Sign Up
+                    Get Started
                     <Icons.chevronRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
