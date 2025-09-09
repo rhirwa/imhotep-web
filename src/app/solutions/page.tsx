@@ -64,7 +64,7 @@ const solutions: SolutionCardProps[] = [
   {
     title: 'Demand Forecast',
     description: 'Leverage AI to predict future demand with 95% accuracy, optimize inventory levels, and reduce waste.',
-    href: '/solutions/demand-forecast',
+    href: '/demand-forecast',
     icon: <Icons.lineChart className="h-8 w-8 text-green-400" />,
     kpi: '↑ 23% forecast accuracy',
     category: 'AI/ML',

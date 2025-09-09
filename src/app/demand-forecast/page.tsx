@@ -238,7 +238,7 @@ export default function ForecastingPage() {
           <X className="w-5 h-5" />
         </button>
 
-        <h3 className="text-xl font-bold text-white mb-4 font-mono">Engage Imhotep Systems</h3>
+        <h3 className="text-xl font-bold text-white mb-4 ">Engage Imhotep Systems</h3>
         <div className="space-y-4">
           <p className="text-gray-300 text-sm">
             Ready to implement continuous AI forecasting for your business?
@@ -249,7 +249,7 @@ export default function ForecastingPage() {
             <a
               href="https://calendly.com/imhotep-systems/ai-consultation"
               target="_blank"
-              className="flex items-center justify-center w-full bg-green-600 hover:bg-green-500 text-white rounded-lg py-3 px-4 transition-colors font-mono"
+              className="flex items-center justify-center w-full bg-green-600 hover:bg-green-500 text-white rounded-lg py-3 px-4 transition-colors "
             >
               <Calendar className="w-4 h-4 mr-2" />
               Schedule AI Consultation
@@ -258,14 +258,14 @@ export default function ForecastingPage() {
             <a
               href="https://wa.me/250788123456?text=I'm interested in Imhotep's AI forecasting platform"
               target="_blank"
-              className="flex items-center justify-center w-full bg-gray-700 hover:bg-gray-600 text-white rounded-lg py-3 px-4 transition-colors font-mono border border-gray-600"
+              className="flex items-center justify-center w-full bg-gray-700 hover:bg-gray-600 text-white rounded-lg py-3 px-4 transition-colors  border border-gray-600"
             >
               <MessageCircle className="w-4 h-4 mr-2" />
               WhatsApp Intelligence Team
             </a>
           </div>
 
-          <div className="text-center text-xs text-gray-400 mt-4 font-mono">
+          <div className="text-center text-xs text-gray-400 mt-4 ">
             Response time: &lt; 2 hours during business hours
           </div>
         </div>
@@ -278,7 +278,7 @@ export default function ForecastingPage() {
     <div className="fixed bottom-6 right-6 z-40">
       <button
         onClick={() => setShowConsultationModal(true)}
-        className="bg-green-600 hover:bg-green-500 text-white px-6 py-3 rounded-full shadow-2xl shadow-green-500/20 flex items-center space-x-2 transition-all hover:scale-105 font-mono border border-green-500/50"
+        className="bg-green-600 hover:bg-green-500 text-white px-6 py-3 rounded-full shadow-2xl shadow-green-500/20 flex items-center space-x-2 transition-all hover:scale-105  border border-green-500/50"
       >
         <Brain className="w-4 h-4" />
         <span>Engage AI</span>
@@ -296,10 +296,10 @@ export default function ForecastingPage() {
             <div className="w-16 h-16 border-4 border-green-500/30 border-t-green-500 rounded-full animate-spin mx-auto"></div>
             <div className="absolute inset-0 w-16 h-16 border-4 border-transparent border-t-cyan-500 rounded-full animate-spin mx-auto" style={{ animationDirection: 'reverse', animationDuration: '1s' }}></div>
           </div>
-          <h2 className="text-2xl font-bold text-green-400 mb-2 font-mono">
+          <h2 className="text-2xl font-bold text-green-400 mb-2 ">
             {job?.status === 'running' ? 'PROCESSING DATA MATRIX...' : 'INITIALIZING AI SYSTEMS...'}
           </h2>
-          <p className="text-gray-400 font-mono text-sm">
+          <p className="text-gray-400  text-sm">
             {job?.status ? `STATUS: ${job.status.toUpperCase()}` : 'Quantum processing in progress'}
           </p>
         </div>
@@ -314,14 +314,14 @@ export default function ForecastingPage() {
         <AnimatedCircuits />
         <div className="bg-gray-900/50 border border-red-500/50 rounded-xl p-8 max-w-md w-full text-center relative z-10">
           <AlertCircle className="h-12 w-12 text-red-500 mx-auto mb-4" />
-          <h2 className="text-2xl font-bold text-red-400 mb-2 font-mono">SYSTEM ERROR</h2>
-          <p className="text-gray-300 mb-6 font-mono text-sm">{error}</p>
+          <h2 className="text-2xl font-bold text-red-400 mb-2 ">SYSTEM ERROR</h2>
+          <p className="text-gray-300 mb-6  text-sm">{error}</p>
           <button
             onClick={() => {
               setError(null);
               setLoading(false);
             }}
-            className="bg-green-600 hover:bg-green-500 text-white px-6 py-2 rounded-lg transition-colors font-mono"
+            className="bg-green-600 hover:bg-green-500 text-white px-6 py-2 rounded-lg transition-colors "
           >
             RETRY OPERATION
           </button>
@@ -341,7 +341,7 @@ export default function ForecastingPage() {
           <div className="mb-8">
             <div className="inline-flex items-center space-x-3 bg-green-600/10 border border-green-600/30 rounded-full px-6 py-3 mb-8">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-green-400 text-sm font-mono">AI FORECASTING SYSTEM ONLINE</span>
+              <span className="text-green-400 text-sm ">AI FORECASTING SYSTEM ONLINE</span>
               <div className="flex space-x-1">
                 {[...Array(3)].map((_, i) => (
                   <div key={i} className="w-1 h-3 bg-green-400 rounded animate-pulse" style={{ animationDelay: `${i * 0.2}s` }}></div>
@@ -350,19 +350,19 @@ export default function ForecastingPage() {
             </div>
           </div>
 
-          <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white mb-8 font-mono">
+          <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white mb-8 ">
             NEVER STOCK OUT
             <br />
             <span className="text-green-400">AGAIN.</span>
           </h1>
 
-          <p className="mt-8 text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-mono">
+          <p className="mt-8 text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed ">
             AI-powered demand forecasting built for African markets.
             Transform sales data into precise inventory intelligence.
           </p>
 
           {/* Trust Signals */}
-          <div className="flex flex-wrap items-center justify-center gap-8 mt-12 text-sm text-gray-400 font-mono">
+          <div className="flex flex-wrap items-center justify-center gap-8 mt-12 text-sm text-gray-400 ">
             <div className="flex items-center space-x-2">
               <Building2 className="w-4 h-4 text-green-400" />
               <span>15+ KIGALI RETAILERS</span>
@@ -385,11 +385,11 @@ export default function ForecastingPage() {
                   <Star key={i} className="w-4 h-4 text-green-400 fill-current" />
                 ))}
               </div>
-              <p className="text-gray-300 italic font-mono text-sm">
+              <p className="text-gray-300 italic  text-sm">
                 &quot;Stockouts down 22%. Freed up R₣ 2.4M in working capital.
                 Imhotep&apos;s AI sees patterns we couldn&apos;t.&quot;
               </p>
-              <p className="text-xs text-green-400 mt-3 font-mono">
+              <p className="text-xs text-green-400 mt-3 ">
                 — SARAH M., SAWA CITY ELECTRONICS
               </p>
             </div>
@@ -402,8 +402,8 @@ export default function ForecastingPage() {
         <section className="relative z-10 max-w-7xl mx-auto px-6 mb-20">
           <div className="bg-gray-900/50 border border-gray-700/50 rounded-2xl p-8 backdrop-blur-sm">
             <div className="text-center mb-10">
-              <h2 className="text-3xl font-bold text-white mb-3 font-mono">INITIALIZE AI ANALYSIS</h2>
-              <p className="text-gray-400 max-w-2xl mx-auto font-mono">
+              <h2 className="text-3xl font-bold text-white mb-3 ">INITIALIZE AI ANALYSIS</h2>
+              <p className="text-gray-400 max-w-2xl mx-auto ">
                 Upload sales data or select industry dataset for instant intelligence generation
               </p>
             </div>
@@ -424,10 +424,10 @@ export default function ForecastingPage() {
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-800/50 border border-gray-700 flex items-center justify-center">
                     <Upload className="w-6 h-6 text-green-400" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2 text-white font-mono">
+                  <h3 className="text-lg font-semibold mb-2 text-white ">
                     {file ? `LOADED: ${file.name}` : 'UPLOAD SALES DATA'}
                   </h3>
-                  <p className="text-gray-400 mb-4 text-sm font-mono">
+                  <p className="text-gray-400 mb-4 text-sm ">
                     CSV, EXCEL, JSON • MAX 50MB • DRAG & DROP OR CLICK
                   </p>
                   <input
@@ -443,7 +443,7 @@ export default function ForecastingPage() {
                   <button
                     onClick={handleUpload}
                     disabled={!file || loading}
-                    className="w-full bg-green-600 hover:bg-green-500 disabled:bg-gray-700 disabled:cursor-not-allowed text-white px-6 py-4 rounded-xl font-mono font-medium transition-all flex items-center justify-center text-lg hover:shadow-lg hover:shadow-green-500/20 disabled:shadow-none border border-green-500/50"
+                    className="w-full bg-green-600 hover:bg-green-500 disabled:bg-gray-700 disabled:cursor-not-allowed text-white px-6 py-4 rounded-xl  font-medium transition-all flex items-center justify-center text-lg hover:shadow-lg hover:shadow-green-500/20 disabled:shadow-none border border-green-500/50"
                   >
                     {loading ? (
                       <>
@@ -460,20 +460,20 @@ export default function ForecastingPage() {
 
                   <div className="relative flex items-center my-6">
                     <div className="flex-grow border-t border-gray-700"></div>
-                    <span className="flex-shrink mx-4 text-gray-500 text-sm font-mono">OR</span>
+                    <span className="flex-shrink mx-4 text-gray-500 text-sm ">OR</span>
                     <div className="flex-grow border-t border-gray-700"></div>
                   </div>
 
                   {/* Industry Datasets */}
                   <div className="space-y-4">
-                    <p className="text-center text-gray-400 text-sm font-mono">SELECT INDUSTRY DATASET:</p>
+                    <p className="text-center text-gray-400 text-sm ">SELECT INDUSTRY DATASET:</p>
                     <div className="grid grid-cols-2 gap-3">
                       {industryDatasets.map((industry) => (
                         <button
                           key={industry.id}
                           onClick={() => handleSampleData(industry.id)}
                           disabled={loading}
-                          className="bg-gray-800/50 hover:bg-gray-700/70 text-white p-4 rounded-lg font-mono transition-all border border-gray-700 hover:border-green-500/50 text-left disabled:opacity-50"
+                          className="bg-gray-800/50 hover:bg-gray-700/70 text-white p-4 rounded-lg  transition-all border border-gray-700 hover:border-green-500/50 text-left disabled:opacity-50"
                         >
                           <div className="flex items-center space-x-3 mb-2">
                             <span className="text-xl">{industry.icon}</span>
@@ -491,11 +491,11 @@ export default function ForecastingPage() {
               <div className="bg-gray-900/30 border border-gray-700/50 rounded-2xl p-6">
                 <div className="space-y-8">
                   <div>
-                    <h3 className="text-lg font-semibold mb-4 text-green-400 flex items-center font-mono">
+                    <h3 className="text-lg font-semibold mb-4 text-green-400 flex items-center ">
                       <Cpu className="w-5 h-5 mr-2" />
                       AI DETECTION CAPABILITIES
                     </h3>
-                    <ul className="space-y-3 text-gray-300 font-mono text-sm">
+                    <ul className="space-y-3 text-gray-300  text-sm">
                       <li className="flex items-start">
                         <CheckCircle className="w-4 h-4 mr-3 mt-0.5 text-green-400 flex-shrink-0" />
                         <span>Product identifiers & SKU pattern recognition</span>
@@ -518,11 +518,11 @@ export default function ForecastingPage() {
                   <div className="h-px bg-gradient-to-r from-transparent via-green-500/30 to-transparent"></div>
 
                   <div>
-                    <h3 className="text-lg font-semibold mb-4 text-cyan-400 flex items-center font-mono">
+                    <h3 className="text-lg font-semibold mb-4 text-cyan-400 flex items-center ">
                       <BarChart3 className="w-5 h-5 mr-2" />
                       INTELLIGENCE OUTPUT
                     </h3>
-                    <ul className="space-y-3 text-gray-300 font-mono text-sm">
+                    <ul className="space-y-3 text-gray-300  text-sm">
                       <li className="flex items-start">
                         <div className="w-4 h-4 mr-3 mt-0.5 flex items-center justify-center text-cyan-400">
                           <BarChart3 className="w-3 h-3" />
@@ -552,8 +552,8 @@ export default function ForecastingPage() {
 
                   {/* Performance Metrics */}
                   <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700/50">
-                    <h4 className="text-sm font-semibold text-white mb-3 font-mono">SYSTEM PERFORMANCE</h4>
-                    <div className="grid grid-cols-2 gap-4 text-xs font-mono">
+                    <h4 className="text-sm font-semibold text-white mb-3 ">SYSTEM PERFORMANCE</h4>
+                    <div className="grid grid-cols-2 gap-4 text-xs ">
                       <div className="text-center">
                         <div className="text-lg font-bold text-green-400">94%</div>
                         <div className="text-gray-400">ACCURACY</div>
@@ -578,21 +578,21 @@ export default function ForecastingPage() {
             {/* Results Header */}
             <div className="flex items-center justify-between mb-8">
               <div>
-                <h2 className="text-2xl font-bold text-green-400 font-mono">
+                <h2 className="text-2xl font-bold text-green-400 ">
                   INTELLIGENCE REPORT GENERATED
                 </h2>
-                <p className="text-gray-400 font-mono text-sm mt-1">
+                <p className="text-gray-400  text-sm mt-1">
                   CONFIDENCE LEVEL: 94% • PROCESSING TIME: 2.3s
                 </p>
               </div>
               <div className="flex space-x-3">
-                <button className="flex items-center space-x-2 bg-gray-700 hover:bg-gray-600 px-4 py-2.5 rounded-lg text-sm transition-colors border border-gray-600 hover:border-gray-500 font-mono">
+                <button className="flex items-center space-x-2 bg-gray-700 hover:bg-gray-600 px-4 py-2.5 rounded-lg text-sm transition-colors border border-gray-600 hover:border-gray-500 ">
                   <FileDown className="w-4 h-4" />
                   <span>EXPORT PDF</span>
                 </button>
                 <button
                   onClick={() => setShowConsultationModal(true)}
-                  className="flex items-center space-x-2 bg-green-600 hover:bg-green-500 px-4 py-2.5 rounded-lg text-sm transition-colors hover:shadow-lg hover:shadow-green-500/20 font-mono border border-green-500/50"
+                  className="flex items-center space-x-2 bg-green-600 hover:bg-green-500 px-4 py-2.5 rounded-lg text-sm transition-colors hover:shadow-lg hover:shadow-green-500/20  border border-green-500/50"
                 >
                   <Brain className="w-4 h-4" />
                   <span>ENGAGE IMHOTEP</span>
@@ -610,7 +610,7 @@ export default function ForecastingPage() {
                 <button
                   key={key}
                   onClick={() => setActiveView(key as "summary" | "charts" | "insights")}
-                  className={`flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-mono transition-colors ${activeView === key
+                  className={`flex items-center space-x-2 px-4 py-2 rounded-md text-sm  transition-colors ${activeView === key
                       ? 'bg-green-600 text-white shadow-lg shadow-green-500/20'
                       : 'text-gray-400 hover:text-white hover:bg-gray-700'
                     }`}
@@ -626,41 +626,41 @@ export default function ForecastingPage() {
                 {/* Enhanced Metrics Grid */}
                 <div className="grid md:grid-cols-4 gap-6">
                   <div className="bg-gray-800/50 rounded-xl p-6 border border-green-500/30">
-                    <div className="text-3xl font-bold text-green-400 font-mono mb-2">
+                    <div className="text-3xl font-bold text-green-400  mb-2">
                       {formatRwandanFrancs(850000)}
                     </div>
-                    <div className="text-sm text-gray-400 font-mono">MONTHLY SAVINGS POTENTIAL</div>
+                    <div className="text-sm text-gray-400 ">MONTHLY SAVINGS POTENTIAL</div>
                     <div className="text-xs text-green-400 mt-1">↑ 22% vs current performance</div>
                   </div>
 
                   <div className="bg-gray-800/50 rounded-xl p-6 border border-cyan-500/30">
-                    <div className="text-3xl font-bold text-cyan-400 font-mono mb-2">
+                    <div className="text-3xl font-bold text-cyan-400  mb-2">
                       94%
                     </div>
-                    <div className="text-sm text-gray-400 font-mono">FORECAST CONFIDENCE</div>
+                    <div className="text-sm text-gray-400 ">FORECAST CONFIDENCE</div>
                     <div className="text-xs text-cyan-400 mt-1">Statistical significance: p&lt;0.01</div>
                   </div>
 
                   <div className="bg-gray-800/50 rounded-xl p-6 border border-red-500/30">
-                    <div className="text-3xl font-bold text-red-400 font-mono mb-2">
+                    <div className="text-3xl font-bold text-red-400  mb-2">
                       {result.forecasts.filter(f => f.risk_level === 'high').length}
                     </div>
-                    <div className="text-sm text-gray-400 font-mono">HIGH RISK ITEMS</div>
+                    <div className="text-sm text-gray-400 ">HIGH RISK ITEMS</div>
                     <div className="text-xs text-red-400 mt-1">Immediate action required</div>
                   </div>
 
                   <div className="bg-gray-800/50 rounded-xl p-6 border border-yellow-500/30">
-                    <div className="text-3xl font-bold text-yellow-400 font-mono mb-2">
+                    <div className="text-3xl font-bold text-yellow-400  mb-2">
                       {result.summary.total_rows.toLocaleString()}
                     </div>
-                    <div className="text-sm text-gray-400 font-mono">DATA POINTS ANALYZED</div>
+                    <div className="text-sm text-gray-400 ">DATA POINTS ANALYZED</div>
                     <div className="text-xs text-yellow-400 mt-1">Range: {result.summary.date_range}</div>
                   </div>
                 </div>
 
                 {/* Critical Alerts */}
                 <div className="bg-red-900/20 border border-red-500/50 rounded-xl p-6">
-                  <h3 className="text-lg font-semibold mb-4 font-mono text-red-400 flex items-center">
+                  <h3 className="text-lg font-semibold mb-4  text-red-400 flex items-center">
                     <Clock className="w-5 h-5 mr-2" />
                     CRITICAL ALERTS - ACTION REQUIRED
                   </h3>
@@ -675,13 +675,13 @@ export default function ForecastingPage() {
                               <AlertTriangle className="h-5 w-5 text-red-400" />
                             </div>
                             <div>
-                              <div className="text-sm font-medium text-white font-mono">{forecast.recommendation}</div>
-                              <div className="text-xs text-red-400 font-mono">
+                              <div className="text-sm font-medium text-white ">{forecast.recommendation}</div>
+                              <div className="text-xs text-red-400 ">
                                 {forecast.sku} • IMPACT: {formatRwandanFrancs(forecast.potential_revenue_impact * 12)} ANNUALLY
                               </div>
                             </div>
                           </div>
-                          <div className="px-3 py-1 rounded-full text-xs font-mono bg-red-600 text-white">
+                          <div className="px-3 py-1 rounded-full text-xs  bg-red-600 text-white">
                             HIGH PRIORITY
                           </div>
                         </div>
@@ -691,13 +691,13 @@ export default function ForecastingPage() {
 
                 {/* System Analysis */}
                 <div className="bg-gray-800/30 rounded-xl p-6 border border-gray-700/50">
-                  <h3 className="text-lg font-semibold mb-4 font-mono text-green-400 flex items-center">
+                  <h3 className="text-lg font-semibold mb-4  text-green-400 flex items-center">
                     <Cpu className="w-5 h-5 mr-2" />
                     AI PROCESSING SUMMARY
                   </h3>
                   <ul className="space-y-2">
                     {result.methodology_notes?.map((note, index) => (
-                      <li key={index} className="flex items-start space-x-3 text-sm font-mono">
+                      <li key={index} className="flex items-start space-x-3 text-sm ">
                         <CheckCircle className="w-4 h-4 mt-0.5 text-green-400 flex-shrink-0" />
                         <span className="text-gray-300">{note}</span>
                       </li>
@@ -715,17 +715,17 @@ export default function ForecastingPage() {
                     <div key={index} className="bg-gray-800/30 rounded-xl p-6 border border-gray-700/50">
                       <div className="flex items-center justify-between mb-4">
                         <div>
-                          <h3 className="text-lg font-semibold font-mono text-white">{forecast.sku}</h3>
-                          <p className="text-sm text-gray-400 font-mono">CURRENT STOCK: {forecast.current_stock}</p>
+                          <h3 className="text-lg font-semibold  text-white">{forecast.sku}</h3>
+                          <p className="text-sm text-gray-400 ">CURRENT STOCK: {forecast.current_stock}</p>
                         </div>
-                        <div className={`px-3 py-1 rounded-full text-xs font-mono border ${getRiskColor(forecast.risk_level)}`}>
+                        <div className={`px-3 py-1 rounded-full text-xs  border ${getRiskColor(forecast.risk_level)}`}>
                           {forecast.risk_level.toUpperCase()} RISK
                         </div>
                       </div>
 
                       {/* Enhanced Progress Bar */}
                       <div className="mb-6">
-                        <div className="flex justify-between text-sm text-gray-400 mb-2 font-mono">
+                        <div className="flex justify-between text-sm text-gray-400 mb-2 ">
                           <span>STOCK LEVEL</span>
                           <span>{Math.round((forecast.current_stock / forecast.predicted_demand) * 100)}% OF PREDICTED DEMAND</span>
                         </div>
@@ -741,28 +741,28 @@ export default function ForecastingPage() {
 
                       <div className="grid md:grid-cols-4 gap-4">
                         <div className="text-center p-4 bg-gray-900/50 rounded-lg border border-gray-600/50">
-                          <div className="text-2xl font-bold text-green-400 font-mono">{forecast.predicted_demand}</div>
-                          <div className="text-xs text-gray-400 font-mono">PREDICTED DEMAND</div>
+                          <div className="text-2xl font-bold text-green-400 ">{forecast.predicted_demand}</div>
+                          <div className="text-xs text-gray-400 ">PREDICTED DEMAND</div>
                         </div>
                         <div className="text-center p-4 bg-gray-900/50 rounded-lg border border-gray-600/50">
-                          <div className="text-xl font-bold text-yellow-400 font-mono">
+                          <div className="text-xl font-bold text-yellow-400 ">
                             {formatRwandanFrancs(forecast.potential_revenue_impact)}
                           </div>
-                          <div className="text-xs text-gray-400 font-mono">MONTHLY IMPACT</div>
+                          <div className="text-xs text-gray-400 ">MONTHLY IMPACT</div>
                         </div>
                         <div className="text-center p-4 bg-gray-900/50 rounded-lg border border-gray-600/50">
-                          <div className="text-2xl font-bold text-green-600 font-mono">94%</div>
-                          <div className="text-xs text-gray-400 font-mono">CONFIDENCE</div>
+                          <div className="text-2xl font-bold text-green-600 ">94%</div>
+                          <div className="text-xs text-gray-400 ">CONFIDENCE</div>
                         </div>
                         <div className="text-center p-4 bg-blue-900/20 rounded-lg border border-blue-500/30">
-                          <div className="text-sm font-medium text-blue-300 font-mono">{forecast.recommendation}</div>
-                          <div className="text-xs text-blue-400 mt-1 font-mono">AI RECOMMENDATION</div>
+                          <div className="text-sm font-medium text-blue-300 ">{forecast.recommendation}</div>
+                          <div className="text-xs text-blue-400 mt-1 ">AI RECOMMENDATION</div>
                         </div>
                       </div>
 
                       {/* Mini Trend Visualization */}
                       <div className="mt-4 bg-gradient-to-r from-gray-800/50 to-gray-900/50 rounded-lg p-4 border border-gray-600/30">
-                        <div className="flex items-center justify-between text-sm text-gray-400 mb-2 font-mono">
+                        <div className="flex items-center justify-between text-sm text-gray-400 mb-2 ">
                           <span>7-DAY TREND ANALYSIS</span>
                           <span className="flex items-center text-green-400">
                             <TrendingUp className="w-4 h-4 mr-1" />
@@ -794,7 +794,7 @@ export default function ForecastingPage() {
                 {/* Problem vs Solution Grid */}
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="text-lg font-semibold mb-4 font-mono text-red-400 flex items-center">
+                    <h3 className="text-lg font-semibold mb-4  text-red-400 flex items-center">
                       <AlertTriangle className="w-5 h-5 mr-2" />
                       SYSTEM ANOMALIES DETECTED
                     </h3>
@@ -805,11 +805,11 @@ export default function ForecastingPage() {
                           <div key={index} className="flex items-start space-x-3 bg-red-900/20 border border-red-500/30 rounded-lg p-4">
                             {getInsightIcon(insight.type)}
                             <div className="flex-1">
-                              <div className="text-sm font-mono text-red-300">{insight.message}</div>
+                              <div className="text-sm  text-red-300">{insight.message}</div>
                               {insight.sku && (
-                                <div className="text-xs text-red-400 mt-1 font-mono">TARGET: {insight.sku}</div>
+                                <div className="text-xs text-red-400 mt-1 ">TARGET: {insight.sku}</div>
                               )}
-                              <div className="text-xs text-gray-400 mt-2 font-mono">
+                              <div className="text-xs text-gray-400 mt-2 ">
                                 EST. LOSS: {formatRwandanFrancs(125000)}/MONTH IF UNADDRESSED
                               </div>
                             </div>
@@ -819,7 +819,7 @@ export default function ForecastingPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold mb-4 font-mono text-green-400 flex items-center">
+                    <h3 className="text-lg font-semibold mb-4  text-green-400 flex items-center">
                       <CheckCircle className="w-5 h-5 mr-2" />
                       AI OPTIMIZATION PROTOCOLS
                     </h3>
@@ -831,13 +831,13 @@ export default function ForecastingPage() {
                           <div key={index} className="flex items-start space-x-3 bg-green-900/20 border border-green-500/30 rounded-lg p-4">
                             <CheckCircle className="w-4 h-4 mt-0.5 text-green-400 flex-shrink-0" />
                             <div className="flex-1">
-                              <div className="text-sm font-mono text-green-300">
+                              <div className="text-sm  text-green-300">
                                 {forecast.recommendation}
                               </div>
-                              <div className="text-xs text-green-400 mt-1 font-mono">
+                              <div className="text-xs text-green-400 mt-1 ">
                                 PROJECTED IMPACT: {formatRwandanFrancs(forecast.potential_revenue_impact)}/MONTH
                               </div>
-                              <div className="text-xs text-gray-400 mt-2 font-mono">
+                              <div className="text-xs text-gray-400 mt-2 ">
                                 IMPLEMENTATION: 3-5 DAYS • CONFIDENCE: HIGH
                               </div>
                             </div>
@@ -849,29 +849,29 @@ export default function ForecastingPage() {
 
                 {/* Business Intelligence Score */}
                 <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-xl p-6 border border-blue-500/30">
-                  <h3 className="text-lg font-semibold mb-4 text-white font-mono">BUSINESS INTELLIGENCE METRICS</h3>
+                  <h3 className="text-lg font-semibold mb-4 text-white ">BUSINESS INTELLIGENCE METRICS</h3>
                   <div className="grid md:grid-cols-3 gap-6">
                     <div className="text-center">
-                      <div className="text-4xl font-bold text-green-400 mb-2 font-mono">B+</div>
-                      <div className="text-sm font-medium text-white font-mono">INVENTORY EFFICIENCY</div>
-                      <div className="text-xs text-green-400 font-mono">ABOVE SECTOR AVERAGE</div>
+                      <div className="text-4xl font-bold text-green-400 mb-2 ">B+</div>
+                      <div className="text-sm font-medium text-white ">INVENTORY EFFICIENCY</div>
+                      <div className="text-xs text-green-400 ">ABOVE SECTOR AVERAGE</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-4xl font-bold text-yellow-400 mb-2 font-mono">C</div>
-                      <div className="text-sm font-medium text-white font-mono">DEMAND PREDICTION</div>
-                      <div className="text-xs text-yellow-400 font-mono">OPTIMIZATION POTENTIAL</div>
+                      <div className="text-4xl font-bold text-yellow-400 mb-2 ">C</div>
+                      <div className="text-sm font-medium text-white ">DEMAND PREDICTION</div>
+                      <div className="text-xs text-yellow-400 ">OPTIMIZATION POTENTIAL</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-4xl font-bold text-blue-400 mb-2 font-mono">A-</div>
-                      <div className="text-sm font-medium text-white font-mono">STOCK TURNOVER</div>
-                      <div className="text-xs text-blue-400 font-mono">EXCELLENT PERFORMANCE</div>
+                      <div className="text-4xl font-bold text-blue-400 mb-2 ">A-</div>
+                      <div className="text-sm font-medium text-white ">STOCK TURNOVER</div>
+                      <div className="text-xs text-blue-400 ">EXCELLENT PERFORMANCE</div>
                     </div>
                   </div>
                 </div>
 
                 {/* Complete Intelligence Feed */}
                 <div>
-                  <h3 className="text-lg font-semibold mb-4 font-mono text-white">COMPLETE INTELLIGENCE FEED</h3>
+                  <h3 className="text-lg font-semibold mb-4  text-white">COMPLETE INTELLIGENCE FEED</h3>
                   <div className="space-y-3">
                     {result.insights.map((insight, index) => {
                       const priorityColors = {
@@ -884,12 +884,12 @@ export default function ForecastingPage() {
                         <div key={index} className={`flex items-center space-x-3 border rounded-lg p-3 ${priorityColors[insight.priority]}`}>
                           {getInsightIcon(insight.type)}
                           <div className="flex-1">
-                            <span className="text-sm font-mono">{insight.message}</span>
+                            <span className="text-sm ">{insight.message}</span>
                             {insight.sku && (
-                              <span className="text-xs text-gray-400 ml-2 font-mono">({insight.sku})</span>
+                              <span className="text-xs text-gray-400 ml-2 ">({insight.sku})</span>
                             )}
                           </div>
-                          <div className={`px-2 py-1 rounded text-xs font-mono border ${insight.priority === 'high' ? 'bg-red-600/20 border-red-500 text-red-400' :
+                          <div className={`px-2 py-1 rounded text-xs  border ${insight.priority === 'high' ? 'bg-red-600/20 border-red-500 text-red-400' :
                               insight.priority === 'medium' ? 'bg-yellow-600/20 border-yellow-500 text-yellow-400' :
                                 'bg-green-600/20 border-green-500 text-green-400'
                             }`}>
@@ -912,12 +912,12 @@ export default function ForecastingPage() {
           <div className="bg-gradient-to-r from-green-600/10 via-cyan-600/10 to-purple-600/10 border border-green-600/30 rounded-2xl p-8 text-center relative overflow-hidden">
             {/* Animated Background Elements */}
             <div className="absolute top-4 right-4 w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-            <div className="absolute top-8 right-8 text-xs text-green-400 font-mono">SYSTEM ONLINE</div>
+            <div className="absolute top-8 right-8 text-xs text-green-400 ">SYSTEM ONLINE</div>
 
-            <h2 className="text-3xl font-bold mb-4 font-mono text-white">
+            <h2 className="text-3xl font-bold mb-4  text-white">
               READY FOR CONTINUOUS AI INTELLIGENCE?
             </h2>
-            <p className="text-gray-300 mb-8 max-w-3xl mx-auto font-mono">
+            <p className="text-gray-300 mb-8 max-w-3xl mx-auto ">
               This preview demonstrates single-dataset analysis.
               Production deployment includes real-time monitoring, multi-location dashboards,
               automated alerts, and dedicated AI analyst support.
@@ -927,18 +927,18 @@ export default function ForecastingPage() {
             <div className="bg-gray-900/50 rounded-xl p-6 mb-8 max-w-2xl mx-auto border border-gray-700/50">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="text-center border-r border-gray-600 pr-6">
-                  <div className="text-2xl font-bold text-white mb-2 font-mono">
+                  <div className="text-2xl font-bold text-white mb-2 ">
                     {formatRwandanFrancs(45000)}<span className="text-lg text-gray-400">/MONTH</span>
                   </div>
-                  <div className="text-sm text-gray-300 font-mono">STARTER DEPLOYMENT</div>
-                  <div className="text-xs text-gray-400 font-mono">UP TO 3 LOCATIONS</div>
+                  <div className="text-sm text-gray-300 ">STARTER DEPLOYMENT</div>
+                  <div className="text-xs text-gray-400 ">UP TO 3 LOCATIONS</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-400 mb-2 font-mono">
+                  <div className="text-2xl font-bold text-green-400 mb-2 ">
                     ENTERPRISE PRICING
                   </div>
-                  <div className="text-sm text-gray-300 font-mono">FULL AI PLATFORM</div>
-                  <div className="text-xs text-gray-400 font-mono">UNLIMITED + ANALYST SUPPORT</div>
+                  <div className="text-sm text-gray-300 ">FULL AI PLATFORM</div>
+                  <div className="text-xs text-gray-400 ">UNLIMITED + ANALYST SUPPORT</div>
                 </div>
               </div>
             </div>
@@ -946,38 +946,38 @@ export default function ForecastingPage() {
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="text-center">
                 <Clock className="w-8 h-8 mx-auto mb-3 text-green-400" />
-                <h3 className="font-semibold mb-2 font-mono text-white">REAL-TIME MONITORING</h3>
-                <p className="text-sm text-gray-400 font-mono">24/7 automated analysis</p>
+                <h3 className="font-semibold mb-2  text-white">REAL-TIME MONITORING</h3>
+                <p className="text-sm text-gray-400 ">24/7 automated analysis</p>
               </div>
               <div className="text-center">
                 <BarChart3 className="w-8 h-8 mx-auto mb-3 text-cyan-400" />
-                <h3 className="font-semibold mb-2 font-mono text-white">MULTI-LOCATION INTEL</h3>
-                <p className="text-sm text-gray-400 font-mono">Unified command center</p>
+                <h3 className="font-semibold mb-2  text-white">MULTI-LOCATION INTEL</h3>
+                <p className="text-sm text-gray-400 ">Unified command center</p>
               </div>
               <div className="text-center">
                 <Brain className="w-8 h-8 mx-auto mb-3 text-purple-400" />
-                <h3 className="font-semibold mb-2 font-mono text-white">AI ANALYST SUPPORT</h3>
-                <p className="text-sm text-gray-400 font-mono">Expert human oversight</p>
+                <h3 className="font-semibold mb-2  text-white">AI ANALYST SUPPORT</h3>
+                <p className="text-sm text-gray-400 ">Expert human oversight</p>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => setShowConsultationModal(true)}
-                className="bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-lg font-mono font-medium transition-all hover:shadow-lg hover:shadow-green-500/20 flex items-center justify-center border border-green-500/50"
+                className="bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-lg  font-medium transition-all hover:shadow-lg hover:shadow-green-500/20 flex items-center justify-center border border-green-500/50"
               >
                 <ArrowRight className="w-4 h-4 mr-2" />
                 DEPLOY AI SYSTEM
               </button>
               <button
                 onClick={() => setShowConsultationModal(true)}
-                className="border border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white px-8 py-4 rounded-lg font-mono font-medium transition-colors"
+                className="border border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white px-8 py-4 rounded-lg  font-medium transition-colors"
               >
                 SCHEDULE CONSULTATION
               </button>
             </div>
 
-            <p className="text-sm text-gray-400 mt-6 font-mono">
+            <p className="text-sm text-gray-400 mt-6 ">
               <span className="text-green-400">⚡</span> PERFORMANCE BOOST: 35% inventory optimization within 60 days
             </p>
           </div>
@@ -989,24 +989,24 @@ export default function ForecastingPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h4 className="font-semibold text-green-400 mb-4 font-mono">SYSTEM ADVANTAGES</h4>
-              <ul className="space-y-2 text-sm text-gray-300 font-mono">
+              <h4 className="font-semibold text-green-400 mb-4 ">SYSTEM ADVANTAGES</h4>
+              <ul className="space-y-2 text-sm text-gray-300 ">
                 <li>✓ African market specialization</li>
                 <li>✓ Local currency & seasonal intelligence</li>
                 <li>✓ Kigali-based technical support</li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-cyan-400 mb-4 font-mono">ACCESS POINTS</h4>
-              <ul className="space-y-2 text-sm text-gray-300 font-mono">
+              <h4 className="font-semibold text-cyan-400 mb-4 ">ACCESS POINTS</h4>
+              <ul className="space-y-2 text-sm text-gray-300 ">
                 <li><a href="#" className="hover:text-green-400 transition-colors">30-Day Trial Access</a></li>
                 <li><a href="#" className="hover:text-green-400 transition-colors">Deployment Pricing</a></li>
                 <li><a href="#" className="hover:text-green-400 transition-colors">Case Studies</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-purple-400 mb-4 font-mono">CONTACT PROTOCOLS</h4>
-              <ul className="space-y-2 text-sm text-gray-300 font-mono">
+              <h4 className="font-semibold text-purple-400 mb-4 ">CONTACT PROTOCOLS</h4>
+              <ul className="space-y-2 text-sm text-gray-300 ">
                 <li>📧 intelligence@imhotepsystems.rw</li>
                 <li>📱 +250 788 123 456</li>
                 <li>📍 KG 15 Ave, Kacyiru, Kigali</li>
@@ -1014,10 +1014,10 @@ export default function ForecastingPage() {
             </div>
           </div>
           <div className="text-center border-t border-gray-800 pt-8">
-            <p className="text-gray-400 font-mono text-sm">
+            <p className="text-gray-400  text-sm">
               <span className="text-green-400">IMHOTEP SYSTEMS</span> — THE CPU BEHIND AFRICAN BUSINESS INTELLIGENCE
             </p>
-            <p className="text-gray-600 text-xs mt-2 font-mono">
+            <p className="text-gray-600 text-xs mt-2 ">
               MANUFACTURED IN RWANDA 🇷🇼 • SERVING AFRICA&apos;S DIGITAL TRANSFORMATION
             </p>
           </div>
